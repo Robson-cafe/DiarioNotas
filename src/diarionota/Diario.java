@@ -20,6 +20,15 @@ public class Diario {
   public void setNomeCurso(String _nomeCurso) {
           nomeCurso = _nomeCurso;
   }
+  
+  public double getMediaTurma() {
+    double somaNotas = 0;
+    for (double nota : notasAlunos) {
+      somaNotas += nota;
+    }
+    
+    return somaNotas/notasAlunos.length;
+  }
 }
 
 

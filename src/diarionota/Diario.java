@@ -29,6 +29,16 @@ public class Diario {
     
     return somaNotas/notasAlunos.length;
   }
+  
+  public double getMenorNota() {
+    double menorNota = notasAlunos[0];
+    
+    for (double nota : notasAlunos) {
+      menorNota = nota;
+    }
+    
+    return menorNota;
+  }
+  
 }
-
 
